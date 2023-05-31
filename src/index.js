@@ -8,6 +8,7 @@ import AppProvider from './provider'
 import { WALLET } from './services/multipleWallet'
 import useCheckConnect from './hooks/useCheckConnect'
 
+
 export const methods = WALLET
 
 export const hooks = useCheckConnect
