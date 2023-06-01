@@ -8,7 +8,7 @@ import {
 
 const snapId = process.env.REACT_APP_SNAP_ID
   ? process.env.REACT_APP_SNAP_ID
-  : 'npm:test-mina-snap'
+  : 'npm:mina-snap'
 
 export const WALLET = {
   MetamaskFlask: {
@@ -222,7 +222,7 @@ export const WALLET = {
         return await window?.ethereum?.request({
           method: 'wallet_requestSnaps',
           params: {
-            'npm:test-mina-snap': {}
+            [snapId]: {}
           }
         })
       },

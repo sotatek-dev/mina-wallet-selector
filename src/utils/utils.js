@@ -51,8 +51,9 @@ export function getOperationName(query = '') {
 }
 
 export const getLatestSnapVersion = async () => {
+  const snapNpmUrl = process.env.REACT_APP_SNAP_URL ? process.env.REACT_APP_SNAP_URL : `https://registry.npmjs.org/mina-snap/latest`
   const version = await axios
-    .get(`https://registry.npmjs.org/test-mina-snap/latest`)
+    .get(snapNpmUrl)
     .then((res) => {
       const data = res.data
       return data.version
