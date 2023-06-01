@@ -1,4 +1,4 @@
-# react-wallet-selector
+# Mina-wallet-selector
 
 > Made with create-react-library
 
@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save react-wallet-selector
+npm install --save mina-wallet-selector
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install --save react-wallet-selector
 ```jsx
 import React, { Component } from 'react'
 
-import { SelectWallet, SendTransactionZkapp, SendWallet, SignWallet, methods } from "react-wallet-selector";
+import { SelectWallet, SendTransactionZkapp, SendWallet, SignWallet, methods } from "mina-wallet-selector";
 import "../node_modules/react-wallet-selector/dist/index.min.css";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
@@ -44,4 +44,4 @@ class Example extends Component {
 
 ## License
 
-MIT © [Sotatek-HoangNguyen7](https://github.com/Sotatek-HoangNguyen7)
+MIT © [Sotatek](https://github.com/sotatek-dev/mina-wallet-selector)
